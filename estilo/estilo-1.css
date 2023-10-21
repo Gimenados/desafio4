@@ -1,6 +1,9 @@
 * {
-    background-color: #F62B6B;
     font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    background-color: #F62B6B;
 }
 
 header h1 {
