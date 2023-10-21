@@ -41,7 +41,9 @@ section {
 
 h2 {
     color: white;
-    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: start !important;
 }
 
 img {
@@ -61,4 +63,18 @@ img {
 .text-container {
     font-weight: 400;
     margin: 0.8rem;
+    line-height: 1.5rem;
+}
+
+a {
+    background-color: rgb(2, 86, 2);
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+a:hover {
+    background-color: #CB2561;
+    font-size: 1.5rem;
 }
