@@ -12,16 +12,16 @@ header h1 {
     border-left: 1px solid white;
     border-right: 1px solid white;
     color: white;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
     font-size: 3rem;
     margin: 3rem;
+    padding: 10px;
+    text-align: center;
 }
 
 section {
     align-items: center;
     background-color: #CB2561;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,19 +31,21 @@ section {
 .section-container {
     align-items: center;
     background-color: aliceblue;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
     margin: 0 1rem 1rem 1rem;
+    padding: 0;
     width: 96%;
 }
 
 h2 {
-    color: white;
-    margin: 1rem 0 1rem 0;
     display: flex;
+    color: white;
     justify-content: start !important;
+    margin: 1rem 0 1rem 0;
+    width: 96%; /*El espacio que quiero que ocupe*/
 }
 
 img {
@@ -51,30 +53,41 @@ img {
 }
 
 .p-container {
-    width: 96%;
+    border-bottom: 2px dotted #9A2836;
+    color: #9A2836;
     display: flex;
     font-weight: 600;
     font-size: 1rem;
-    color: #9A2836;
     justify-content: end !important;
-    border-bottom: 2px dotted #9A2836;
+    width: 96%;
 }
 
 .text-container {
     font-weight: 400;
-    margin: 0.8rem;
     line-height: 1.5rem;
+    margin: 0.8rem;
 }
 
 a {
     background-color: rgb(2, 86, 2);
     color: aliceblue;
-    font-size: 1rem;
-    padding: 0.5rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
 a:hover {
     background-color: #CB2561;
     font-size: 1.5rem;
+}
+
+footer p {
+    background-color: #F86F97;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
 }
