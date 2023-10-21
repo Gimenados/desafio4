@@ -30,12 +30,35 @@ section {
 
 .section-container {
     align-items: center;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
+    margin: 0 1rem 1rem 1rem;
+    width: 96%;
 }
 
 h2 {
     color: white;
+    justify-content: center;
+}
+
+img {
+    width: 98%;
+}
+
+.p-container {
+    width: 96%;
+    display: flex;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #9A2836;
     justify-content: end !important;
+    border-bottom: 2px dotted #9A2836;
+}
+
+.text-container {
+    font-weight: 400;
+    margin: 0.8rem;
 }
