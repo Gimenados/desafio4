@@ -18,8 +18,10 @@ header h1 {
     box-shadow:  3px 4px 20px 2px rgb(15, 8, 26); /*Eje x, eje Y, Tamaño de sombra, Borde de la sombra y color*/
     color: white;
     letter-spacing: 0.25rem;
+    font-size: 3.5rem !important;
     font-family: 'Nosifer', sans-serif;
     text-align: center;
+    margin-top: 0;
 }
 
 h2 {
@@ -35,7 +37,7 @@ h2 {
 
 section {
     background-color: #5a5a5a50 !important;
-    box-shadow:  3px 4px 20px 2px #435c9c;
+    box-shadow:  3px 4px 20px 2px #6a86cc;
     display: inline-flex;
     padding: 2rem;
     width: 100%;
@@ -94,12 +96,13 @@ a:hover {
 }
 
 footer p {
-    background-color: #0f3650;
+    background-color: #0f53814a;
     border-radius: 0.5rem;
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1rem;
-    margin: 2rem 1.5rem 1rem 1.5rem;
+    margin: 2rem 0 1rem 0;
     padding: 1rem;
     text-align: center;
+    width: 103%;
 }
