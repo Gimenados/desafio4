@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/015/400/990/original/nightly-dark-blue-brick-wall-square-background-for-neon-lights-or-text-brickwork-texture-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*Para que ocupe la img toda la pagina */
+    background-position: center center;
+    padding: 2rem 8rem;
+}
+
+header h1 {
+    box-shadow:  3px 4px 20px 2px rgb(15, 8, 26); /*Eje x, eje Y, Tamaño de sombra, Borde de la sombra y color*/
+    color: white;
+    letter-spacing: 0.25rem;
+    font-family: 'Nosifer', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    align-items: center;
+    color: rgba(242, 235, 235, 0.794);;
+    display: flex;
+    letter-spacing: 0.2rem;
+    justify-content: center !important;
+    margin: 0;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    text-transform: uppercase;
+}
+
+section {
+    background-color: #5a5a5a50 !important;
+    box-shadow:  3px 4px 20px 2px #435c9c;
+    display: inline-flex;
+    padding: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-container {
+    align-items: center;
+    background: linear-gradient(#3d6986, #a3aeb8);
+    box-shadow:  3px 4px 20px 2px rgb(97, 111, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem 1rem 2rem;
+    padding: 0;
+}
+
+.p-container {
+    border-bottom: 2px ridge rgba(242, 235, 235, 0.794);;
+    color: rgba(242, 235, 235, 0.794);;
+    display: block;
+    font-weight: 600;
+    font-size: 1.5rem;
+    justify-content: end !important;
+    letter-spacing: 0.25rem;
+    width: 96%;
+}
+
+.text-container {
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: 0.8rem;
+    width: 90%;
+}
+
+a {
+    background-color: rgb(106, 27, 106);
+    border-radius: 20%;
+    color: aliceblue;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    background-color: blue;
+    font-size: 1.7rem;
+}
+
+footer p {
+    background-color: #0f3650;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 2rem 1.5rem 1rem 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
