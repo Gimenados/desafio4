@@ -33,6 +33,8 @@ h2 {
     margin: 0;
     padding: 1rem 1.5rem 1rem 1.5rem;
     text-transform: uppercase;
+    text-orientation: upright; /*vertical*/
+    writing-mode: vertical-rl; /*Quiero que el texto este alineado de forma vertical*/
 }
 
 section {
@@ -45,14 +47,19 @@ section {
     align-content: center;
 }
 
-@media (min-width: 200px) and (max-width: 1224px) { /*Quiero que cuando se achique la pantalla hasta 200px el contenido se vea de forma vertical*/
+@media (min-width: 200px) and (max-width: 1224px) { /*Quiero que cuando se achique la pantalla hasta 200px el contenido se vea de forma vertical los section y el h2 de forma horizontal*/
     section {
         flex-wrap: wrap;
         display: flex;
         padding: 0;
     }
-    html {
+    html { /*Para que ocupe toda la pantalla*/
         padding: 0.5rem;
+    }
+    h2 {
+        text-orientation: horizontal;
+        writing-mode: horizontal-tb;
+        text-align: center;
     }
 }
 

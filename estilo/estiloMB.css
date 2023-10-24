@@ -4,34 +4,60 @@
 
 html {
     background-color: #F62B6B;
+    padding: 2rem;
+}
+
+header {
+    background-image: url(https://i.blogs.es/a1117e/super-mario-bros.-2023/1366_2000.jpeg);
+    background-size: cover;
+    height: 370px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position-y: 50%;
+    background-position-x: 50%;
 }
 
 header h1 {
-    align-items: center;
-    background-color: #CB2561;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    background-color: #cb256267;
     color: white;
-    font-size: 3rem;
-    margin: 3rem;
+    font-size: 5rem;
+    margin: 0.5rem;
     padding: 10px;
     text-align: center;
 }
 
-section {
-    align-items: center;
-    background-color: #CB2561;
-    border-radius: 0.5rem;
+h2 {
+    color: rgb(71, 30, 54);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2rem 3rem 1rem 3rem;
+    justify-content: start !important;
+    margin: 1rem 0 1rem 0;
+    width: 96%; /*El espacio que quiero que ocupe*/
+    text-transform: uppercase;
 }
 
-.section-gallery{
-    display: flex;
+section {
+    background-color: #b7b4b563;
+    box-shadow:  3px 4px 20px 2px #cc6aa5;
+    padding: 1rem;
+    margin: 2rem 1.6rem 1rem 1.6rem;
+}
+
+section p {
+    letter-spacing: 0.5px;
+    line-height: 1.4em;
+}
+
+.section2-container {
+    background-color: #fdfdfdbd;
+    border: 1px solid rgba(0, 0, 0, 0.379);
+}
+
+.section-gallery{ 
     align-items: center;
     column-gap: 20px;
+    display: flex;
     overflow-x: scroll;
     justify-content: center;
     flex-wrap: wrap;
@@ -45,32 +71,45 @@ section {
 }
 
 .gallery-img{
-    border-radius: 5%;
-    width: 20rem;
-    height: 15rem;
-    margin: 5px;
-    padding: 10px 0px 10px 0px;
     align-items: center;
+    border-radius: 5%;
+    box-shadow:  3px 4px 20px 2px #b6c0d78b;
+    width: 15rem;
+    height: 10rem;
+    margin: 5px;
     object-fit: cover;
 }
 
 
-section img :hover{
+.gallery-img:hover{
     cursor: crosshair;
-    width: 300px;
+    height: 12rem;
+    width: 18rem;
+}
+
+.a-container {
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+    align-items: center;
+    
 }
 
 a {
     background-color: rgb(2, 86, 2);
     color: aliceblue;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 a:hover {
     background-color: #CB2561;
     font-size: 1.5rem;
+    border: 2px solid #770730;
 }
 
 footer p {
@@ -87,13 +126,13 @@ footer p {
 /*Scroll personalizado*/
 
 .section-gallery::-webkit-scrollbar {
-    width: 7% !important;
-    height: 4px;
     background-color: #F86F97;
+    height: 4px;
+    width: 7% !important;
 }
 
 .section-gallery::-webkit-scrollbar-thumb { /*La barra*/
-    width: 2vw;
     background-color: #bc2b5b;
     border-radius: 10%;
+    width: 2vw;
 }
