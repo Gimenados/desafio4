@@ -11,7 +11,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover; /*Para que ocupe la img toda la pagina */
     background-position: center center;
-    padding: 2rem 8rem;
+    padding: 1rem 4rem;
 }
 
 header h1 {
@@ -39,15 +39,30 @@ section {
     background-color: #5a5a5a50 !important;
     box-shadow:  3px 4px 20px 2px #6a86cc;
     display: inline-flex;
-    padding: 2rem;
+    padding: 1rem 0 1rem 0;
     width: 100%;
     justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 200px) and (max-width: 1224px) { /*Quiero que cuando se achique la pantalla hasta 200px el contenido se vea de forma vertical*/
+    section {
+        flex-wrap: wrap;
+        display: flex;
+        padding: 0;
+    }
+    html {
+        padding: 0.5rem;
+    }
 }
 
 img {
-    width: 90%;
+    width: 90%; /*El % permite que la imagen se vaya ajustando a la pagina y no tenga un limite*/
     height: auto;
     border-radius: 10px;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .section-container {
@@ -55,7 +70,8 @@ img {
     background: linear-gradient(#3d6986, #a3aeb8);
     box-shadow:  3px 4px 20px 2px rgb(97, 111, 220);
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 2rem 1rem 2rem;
     padding: 0;
@@ -88,21 +104,26 @@ a {
     margin-bottom: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
+    font-weight: 400;
 }
 
 a:hover {
     background-color: blue;
     font-size: 1.7rem;
+    font-weight: 900;
 }
 
 footer p {
     background-color: #0f53814a;
     border-radius: 0.5rem;
     color: rgb(255, 255, 255);
+    display: flex;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    justify-content: center;
     margin: 2rem 0 1rem 0;
-    padding: 1rem;
+    padding: 1rem 0 1rem 0;
     text-align: center;
-    width: 103%;
+    width: 100%;
 }

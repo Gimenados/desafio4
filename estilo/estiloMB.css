@@ -1,0 +1,99 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    background-color: #F62B6B;
+}
+
+header h1 {
+    align-items: center;
+    background-color: #CB2561;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+    font-size: 3rem;
+    margin: 3rem;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    align-items: center;
+    background-color: #CB2561;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 3rem 1rem 3rem;
+}
+
+.section-gallery{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-galery {
+    display: flex;
+    scroll-snap-align: center;
+    min-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.gallery-img{
+    border-radius: 5%;
+    width: 20rem;
+    height: 15rem;
+    margin: 5px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+    object-fit: cover;
+}
+
+
+section img :hover{
+    cursor: crosshair;
+    width: 300px;
+}
+
+a {
+    background-color: rgb(2, 86, 2);
+    color: aliceblue;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+a:hover {
+    background-color: #CB2561;
+    font-size: 1.5rem;
+}
+
+footer p {
+    background-color: #F86F97;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 1rem 3rem 1rem 3rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/*Scroll personalizado*/
+
+.section-gallery::-webkit-scrollbar {
+    width: 7% !important;
+    height: 4px;
+    background-color: #F86F97;
+}
+
+.section-gallery::-webkit-scrollbar-thumb { /*La barra*/
+    width: 2vw;
+    background-color: #bc2b5b;
+    border-radius: 10%;
+}
