@@ -20,11 +20,12 @@ header {
 }
 
 header h1 {
-    background-color: #cb256267;
+    background-color: #cb256257;
+    border-radius: 50%;
     color: white;
     font-size: 5rem;
     margin: 0.5rem;
-    padding: 10px;
+    padding: 2.5rem;
     text-align: center;
 }
 
@@ -33,7 +34,6 @@ h2 {
     display: flex;
     justify-content: start !important;
     margin: 1rem 0 1rem 0;
-    width: 96%; /*El espacio que quiero que ocupe*/
     text-transform: uppercase;
 }
 
@@ -87,12 +87,21 @@ section p {
     width: 18rem;
 }
 
-.a-container {
+.caja-container {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.div-container {
+    display: flex;
     justify-content: center !important;
+    width: 80%;
+    flex-direction: column;
     align-items: center;
-    
+    margin: 1.5rem;
 }
 
 a {
@@ -103,13 +112,13 @@ a {
     text-decoration: none;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 a:hover {
     background-color: #CB2561;
-    font-size: 1.5rem;
-    border: 2px solid #770730;
+    font-size: 2.5rem;
+    border: 3px solid #770730;
 }
 
 footer p {
