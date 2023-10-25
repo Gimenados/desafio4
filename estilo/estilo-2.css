@@ -6,13 +6,15 @@
 }
 
 html {
-    font-size: 16px;
     background-image: url(https://static.vecteezy.com/system/resources/previews/015/400/990/original/nightly-dark-blue-brick-wall-square-background-for-neon-lights-or-text-brickwork-texture-vector.jpg);
-    background-repeat: no-repeat;
+    background-position: center center; /*Se posiciona en X y en Y en el centro*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
     background-size: cover; /*Para que ocupe la img toda la pagina */
-    background-position: center center;
+    font-size: 16px;
     padding: 1rem 4rem;
 }
+
+/*HEADER*/
 
 header h1 {
     box-shadow:  3px 4px 20px 2px rgb(15, 8, 26); /*Eje x, eje Y, Tamaño de sombra, Borde de la sombra y color*/
@@ -24,6 +26,18 @@ header h1 {
     margin-top: 0;
 }
 
+/*CUERPO PAGINA*/
+
+section {
+    align-content: center;
+    background-color: #5a5a5a50 !important;
+    box-shadow:  3px 4px 20px 2px #6a86cc;
+    display: inline-flex; /*Movimiento predecible y adaptable*/
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    justify-content: center;
+}
+
 h2 {
     align-items: center;
     color: rgba(242, 235, 235, 0.794);;
@@ -33,44 +47,27 @@ h2 {
     margin: 0;
     padding: 1rem 1.5rem 1rem 1.5rem;
     text-transform: uppercase;
-    text-orientation: upright; /*vertical*/
+    text-orientation: upright; /*Vertical*/
     writing-mode: vertical-rl; /*Quiero que el texto este alineado de forma vertical*/
 }
 
-section {
-    background-color: #5a5a5a50 !important;
-    box-shadow:  3px 4px 20px 2px #6a86cc;
-    display: inline-flex;
-    padding: 1rem 0 1rem 0;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-}
-
 @media (min-width: 200px) and (max-width: 1224px) { /*Quiero que cuando se achique la pantalla hasta 200px el contenido se vea de forma vertical los section y el h2 de forma horizontal*/
-    section {
-        flex-wrap: wrap;
-        display: flex;
-        padding: 0;
-    }
     html { /*Para que ocupe toda la pantalla*/
         padding: 0.5rem;
     }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
     h2 {
+        text-align: center;
         text-orientation: horizontal;
         writing-mode: horizontal-tb;
-        text-align: center;
     }
 }
 
-img {
-    width: 90%; /*El % permite que la imagen se vaya ajustando a la pagina y no tenga un limite*/
-    height: auto;
-    border-radius: 10px;
-    border-bottom: 1px solid black;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+/*ESTILO DE CAJA DE CADA JUEGO*/
 
 .section-container {
     align-items: center;
@@ -93,6 +90,15 @@ img {
     justify-content: end !important;
     letter-spacing: 0.25rem;
     width: 96%;
+}
+
+img {
+    width: 90%; /*El % permite que la imagen se vaya ajustando a la pagina y no tenga un limite*/
+    height: auto;
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .text-container {
@@ -119,6 +125,8 @@ a:hover {
     font-size: 1.7rem;
     font-weight: 900;
 }
+
+/*FOOTER*/
 
 footer p {
     background-color: #0f53814a;

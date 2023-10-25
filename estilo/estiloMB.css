@@ -4,19 +4,21 @@
 
 html {
     background-color: #F62B6B;
-    padding: 2rem;
+    padding: 1rem;
 }
 
+/*Header*/
+
 header {
+    align-items: center;
     background-image: url(https://i.blogs.es/a1117e/super-mario-bros.-2023/1366_2000.jpeg);
     background-size: cover;
-    height: 370px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-position-y: 50%;
     background-position-x: 50%;
+    display: flex;
+    height: 370px;
+    justify-content: center;
+    width: 100%;
 }
 
 header h1 {
@@ -29,98 +31,110 @@ header h1 {
     text-align: center;
 }
 
-.section2-container {
-    background-color: #fdfdfdbd;
-    border: 1px solid rgba(0, 0, 0, 0.379);
-}
-
-h2 {
-    color: rgb(71, 30, 54);
-    display: flex;
-    justify-content: start !important;
-    margin: 1rem 0 1rem 0;
-    text-transform: uppercase;
-}
+/*Texto inicio*/
 
 section {
     background-color: #b7b4b563;
     box-shadow:  3px 4px 20px 2px #cc6aa5;
     padding: 1rem;
-    margin: 2rem 1.6rem 1rem 1.6rem;
+    margin: 2rem 0 1rem 0;
 }
+
+.section2-container {
+    background-color: #fdfdfdbd;
+    border: 1px solid rgba(0, 0, 0, 0.379);
+}
+
 
 section p {
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
-    line-height: 1.4em;
+    line-height: 2rem;
 }
 
+h2 {
+    color: rgb(71, 30, 54);
+    display: flex;
+    font-weight: 800;
+    font-size: 2rem;
+    justify-content: center !important;
+    margin: 1rem 0 1rem 0;
+    text-transform: uppercase;
+}
+
+/*Seccion Comprar*/
+
 .div-container {
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/mario.kart9.jpg);
     display: flex;
     justify-content: center !important;
-    width: 100%;
-    align-items: center;
     margin-bottom: 1rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/mario.kart9.jpg);
+    padding: 1rem 0 1rem 0;
+    width: 100%;
 }
 
 .caja-container {
+    background-color: rgba(255, 255, 254, 0.698);
+    border-radius: 15%;
+    box-shadow:  3px 4px 30px 7px #cc6aa5;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 255, 254, 0.698);
-    box-shadow:  3px 4px 30px 7px #cc6aa5;
-    border-radius: 15%;
-    padding: 2rem;
     margin: 1rem;
+    padding: 2rem;
     flex-direction: column;
 }
 
+div section h2 {
+    font-weight: 800;
+    flex-direction: column;
+    text-align: center; 
+}
+
 .img-juego {
-    width: 350px;
     height: auto;
+    width: 350px;
 }
 
 .p-container {
     font-weight: 900;
+    font-size: 1.5rem;
     text-align: center;
-}
-
-div h2 {
-    text-align: center; 
-    flex-direction: column;
 }
 
 a {
     background-color: rgb(2, 86, 2);
     color: aliceblue;
-    text-align: center;
-    height: 50px;
+    font-size: 2rem;
     font-weight: 500;
-    text-decoration: none;
+    height: 50px;
     margin-bottom: 1rem;
     padding: 1rem;
-    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
 }
 
 a:hover {
     background-color: #CB2561;
-    font-size: 2.5rem;
     border: 3px solid #770730;
+    font-size: 2.5rem;
 }
 
+/*Galeria de imagenes con scroll*/
 
 .section-gallery{ 
     align-items: center;
     column-gap: 20px;
     display: flex;
-    overflow-x: scroll;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: scroll;
 }
 
 .item-galery {
     display: flex;
-    scroll-snap-align: center;
     min-width: 100%;
+    scroll-snap-align: center;
     flex-wrap: nowrap;
 }
 
@@ -141,18 +155,6 @@ a:hover {
     width: 18rem;
 }
 
-
-footer p {
-    background-color: #F86F97;
-    border-radius: 0.5rem;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 1rem;
-    margin: 1.5rem 3rem 1rem 3rem;
-    padding: 1.5rem;
-    text-align: center;
-}
-
 /*Scroll personalizado*/
 
 .section-gallery::-webkit-scrollbar {
@@ -167,10 +169,42 @@ footer p {
 }
 
 .section-gallery::-webkit-scrollbar-track-piece {
-    border-radius: 2px;
     background-color: rgb(125, 19, 68);
     background-clip: content-box;
+    border-radius: 2px;
     border-radius: 6px;
     border: solid 4px transparent;
   }
+
+  /*Descripcion Juego*/
+
+  ul li {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin: 1rem;
+}
+
+.a-inicio-container {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.a-inicio-container a {
+    background-color: rgb(154, 85, 101);
+    margin: 1rem;
+}
+
+/*Footer*/
+
+footer p {
+    background-color: #F86F97;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 1.5rem 3rem 1rem 3rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
 
