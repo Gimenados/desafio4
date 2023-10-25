@@ -19,11 +19,12 @@ html {
 header h1 {
     box-shadow:  3px 4px 20px 2px rgb(15, 8, 26); /*Eje x, eje Y, Tamaño de sombra, Borde de la sombra y color*/
     color: white;
-    letter-spacing: 0.25rem;
-    font-size: 3.5rem !important;
+    letter-spacing: 0.8rem;
+    font-size: 4rem !important;
     font-family: 'Nosifer', sans-serif;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 15px;
 }
 
 /*CUERPO PAGINA*/

@@ -36,7 +36,6 @@ header h1 {
 /*PRIMER TEXTO*/
 
 section {
-    background-color: #b7b4b563;
     box-shadow:  3px 4px 20px 2px #af9ea8;
     padding: 1rem;
     margin: 2rem 1.6rem 1.5rem 1.6rem;
@@ -143,7 +142,6 @@ h2 {
 .gallery-img{
     align-items: center;
     border-radius: 5%;
-    box-shadow:  3px 4px 20px 2px #b6c0d78b;
     width: 15rem;
     height: 10rem;
     margin: 5px;
