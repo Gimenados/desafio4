@@ -29,6 +29,11 @@ header h1 {
     text-align: center;
 }
 
+.section2-container {
+    background-color: #fdfdfdbd;
+    border: 1px solid rgba(0, 0, 0, 0.379);
+}
+
 h2 {
     color: rgb(71, 30, 54);
     display: flex;
@@ -49,10 +54,59 @@ section p {
     line-height: 1.4em;
 }
 
-.section2-container {
-    background-color: #fdfdfdbd;
-    border: 1px solid rgba(0, 0, 0, 0.379);
+.div-container {
+    display: flex;
+    justify-content: center !important;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/mario.kart9.jpg);
 }
+
+.caja-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 254, 0.698);
+    box-shadow:  3px 4px 30px 7px #cc6aa5;
+    border-radius: 15%;
+    padding: 2rem;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.img-juego {
+    width: 350px;
+    height: auto;
+}
+
+.p-container {
+    font-weight: 900;
+    text-align: center;
+}
+
+div h2 {
+    text-align: center; 
+    flex-direction: column;
+}
+
+a {
+    background-color: rgb(2, 86, 2);
+    color: aliceblue;
+    text-align: center;
+    height: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+a:hover {
+    background-color: #CB2561;
+    font-size: 2.5rem;
+    border: 3px solid #770730;
+}
+
 
 .section-gallery{ 
     align-items: center;
@@ -87,39 +141,6 @@ section p {
     width: 18rem;
 }
 
-.caja-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 0;
-    border: 1px solid black;
-}
-
-.div-container {
-    display: flex;
-    justify-content: center !important;
-    width: 80%;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5rem;
-}
-
-a {
-    background-color: rgb(2, 86, 2);
-    color: aliceblue;
-    text-align: center;
-    font-weight: 500;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-}
-
-a:hover {
-    background-color: #CB2561;
-    font-size: 2.5rem;
-    border: 3px solid #770730;
-}
 
 footer p {
     background-color: #F86F97;
@@ -127,7 +148,7 @@ footer p {
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1rem;
-    margin: 1rem 3rem 1rem 3rem;
+    margin: 1.5rem 3rem 1rem 3rem;
     padding: 1.5rem;
     text-align: center;
 }
@@ -136,12 +157,20 @@ footer p {
 
 .section-gallery::-webkit-scrollbar {
     background-color: #F86F97;
-    height: 4px;
-    width: 7% !important;
+    height: 16px;
+    width: 1rem !important;
 }
 
 .section-gallery::-webkit-scrollbar-thumb { /*La barra*/
-    background-color: #bc2b5b;
+    background-color: #5e0f29;
     border-radius: 10%;
-    width: 2vw;
 }
+
+.section-gallery::-webkit-scrollbar-track-piece {
+    border-radius: 2px;
+    background-color: rgb(125, 19, 68);
+    background-clip: content-box;
+    border-radius: 6px;
+    border: solid 4px transparent;
+  }
+
