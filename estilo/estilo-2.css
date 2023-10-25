@@ -8,7 +8,7 @@
 html {
     background-image: url(https://static.vecteezy.com/system/resources/previews/015/400/990/original/nightly-dark-blue-brick-wall-square-background-for-neon-lights-or-text-brickwork-texture-vector.jpg);
     background-position: center center; /*Se posiciona en X y en Y en el centro*/
-    background-repeat: no-repeat; /*Para que no se repita la imagen*/
+    background-repeat: no-repeat; /*Para que no se repita la imagen de bloques*/
     background-size: cover; /*Para que ocupe la img toda la pagina */
     font-size: 16px;
     padding: 1rem 4rem;
