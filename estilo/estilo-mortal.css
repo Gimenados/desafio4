@@ -159,7 +159,7 @@ h2 {
 
 .section-gallery::-webkit-scrollbar {
     background-color: #F86F97;
-    height: 4px;
+    height: 16px;
     width: 7% !important;
 }
 
