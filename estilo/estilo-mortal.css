@@ -10,7 +10,7 @@ html {
 /*HEADER*/
 
 header {
-    background-image:url(/img/fongoMK.jpg);
+    background-image:url(../img/fongoMK.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 50%;
@@ -57,7 +57,7 @@ section p {
 
 .div-container {
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/M.K4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/M.K4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
