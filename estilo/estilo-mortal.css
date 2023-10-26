@@ -160,15 +160,22 @@ h2 {
 .section-gallery::-webkit-scrollbar {
     background-color: #F86F97;
     height: 16px;
-    width: 7% !important;
+    width: 1rem !important;
 }
 
 .section-gallery::-webkit-scrollbar-thumb { /*La barra*/
-    background-color: #bc2b5b;
+    background-color: #5e0f29;
     border-radius: 10%;
-    width: 2vw;
 }
 
+.section-gallery::-webkit-scrollbar-track-piece {
+    background-color: rgb(125, 19, 68);
+    background-clip: content-box;
+    border-radius: 2px;
+    border-radius: 6px;
+    border: solid 4px transparent;
+  }
+  
  /*DESCRIPCION DEL JUEGO*/
 
  ul li {
