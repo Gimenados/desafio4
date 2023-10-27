@@ -57,7 +57,7 @@ section p {
 
 .div-container {
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/M.K4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondoenfrentados.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -152,7 +152,7 @@ h2 {
 .gallery-img:hover{
     cursor: crosshair;
     height: 12rem;
-    width: 18rem;
+    width: 15rem;
 }
 
 /*Scroll personalizado*/
@@ -175,7 +175,7 @@ h2 {
     border-radius: 6px;
     border: solid 4px transparent;
   }
-  
+
  /*DESCRIPCION DEL JUEGO*/
 
  ul li {
